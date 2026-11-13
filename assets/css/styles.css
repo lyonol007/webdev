@@ -285,10 +285,27 @@ section  {
   margin-top: 88px;
 }
 
+#hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #202020;
+  cursor: pointer;
+}
 
 @media (max-width: 600px)  {
+
+    #hamburger{
+    float: right;
+    display: block;
+    background-color: black;
+    padding: 2%;
+    opacity: 0.5;
+  }
+
   .nav  {
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: flex-start;
     padding: 10px 20px;
   }
@@ -374,4 +391,6 @@ section  {
     font-size: 9px;
   }
 
+
 }
+
