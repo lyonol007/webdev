@@ -1,8 +1,18 @@
 let hamburger = document.querySelector('#hamburger');
+let navLinks = document.querySelector('.nav-links')
    
 function showNav() {
-    document.querySelector('.nav-links').classList.toggle('shownav');
+
+    navLinks.classList.toggle('shownav');
     console.log("toggled");
+
+    hamburger.classList.toggle('active');
+    console.log("toggled");
+
+    hamburger.setAttribute(
+        'aria-expanded',
+        hamburger.classList.contains('active')
+    );
 };
 
 
