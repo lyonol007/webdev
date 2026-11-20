@@ -56,6 +56,9 @@ a{
     z-index: 1000;
 }
 
+.nav a:hover{
+    color: red;
+}
 .nav > a {
     display: flex;
     align-items: center;
@@ -305,7 +308,7 @@ section  {
     display:flex;
     flex-direction:column;
     justify-content:space-around;
-    width:45px;
+    width:40px;
     height:40px;
     padding:8px;
     background-color: #1119a3;
